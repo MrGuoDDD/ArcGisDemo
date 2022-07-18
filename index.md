@@ -40,6 +40,7 @@ double shortestDistance = (pPolyLine1 as IProximityOperator).ReturnDistance(pPol
 </ul>
 
 
+
 <h2>起点地面高程=起点高程+起点埋深</h2>
 <h2>终点地面高程=终点高程+终点埋深</h2>
 
@@ -70,16 +71,13 @@ sngDs = tGxAnaInfo.Ds2 * 0.001;<br>
 <h3>管线起点中心高程=(起点高程+管线起点管底高程)/2</h3>
 <h3>管线终点中心高程=(终点高程+管线终点管底高程)/2</h3>
 
-{:refdef: style="text-align: center;"}
-![](/img/21.png)
-{: refdef}
-
 <li><img src="img/21.png"/></li>
 <h3>管线起点到交点的距离</h3>
 CrsToP1 = Math.Sqrt(Math.Pow(tGxAnaInfo.CrsX - dX1, 2) + Math.Pow(tGxAnaInfo.CrsY - dY1, 2));
 <h3>管线长度</h3>
 P1ToP2 = Math.Sqrt(Math.Pow(dX1 - dX2, 2) + Math.Pow(dY1 - dY2, 2));
-<h3>管线断点处中心高程 根据相似三角形性质计算得出</h3>
+<h3>管线断点处中心高程</h3>
+<li><img src="img/1.png"/></li>
 tGxAnaInfo.CrsCenH = (tGxAnaInfo.CenH2 - tGxAnaInfo.CenH1) * CrsToP1 / P1ToP2 + tGxAnaInfo.CenH1;
 <h3>断点处管顶高程=断点中心点高程+半径</h3>
 tGxAnaInfo.CrsTopH = tGxAnaInfo.CrsCenH + sngDs * 0.5;
