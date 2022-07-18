@@ -69,7 +69,12 @@ sngDs = tGxAnaInfo.Ds2 * 0.001;<br>
 <h3>管线终点管底高程=终点高程-直径</h3>
 <h3>管线起点中心高程=(起点高程+管线起点管底高程)/2</h3>
 <h3>管线终点中心高程=(终点高程+管线终点管底高程)/2</h3>
-<li><img src="../../images/21.png"/></li>
+
+{:refdef: style="text-align: center;"}
+![](/img/21.png)
+{: refdef}
+
+<li><img src="img/21.png"/></li>
 <h3>管线起点到交点的距离</h3>
 CrsToP1 = Math.Sqrt(Math.Pow(tGxAnaInfo.CrsX - dX1, 2) + Math.Pow(tGxAnaInfo.CrsY - dY1, 2));
 <h3>管线长度</h3>
