@@ -15,11 +15,9 @@ else<br>
 tGxAnaInfo.DmType = 1;<br>
 <h2>方管与圆管管径存储方式的区别是什么 dkhnd9762650shctri</h2>
 <h2>横剖面分析中的距离计算的是管线在xy平面投影的长度，需要确认一下横剖面分析里的间距是否是这个值 sdkhfxvhujf92374682394hxid</h2>
-<h2>对硬材料管的高程进行插值计算得出的结果与实际高程基本没有误差，但软材料插值出来的结果是存在一定误差的（随地面高程的改变而改变）（待商榷） 求管线某点高程（是否需要考虑DEM数据，DEM还在研究中）</h2>
 <h2>求管径的算法不一致，冗余  jxhfleinxv89236xhchd 与 jvjuhx[];.'1283 </h2>
 <h2>判断管网是否为排水的方法不一致，并且通过编码常量来定义，不支持后期改动 klnfhfkjebr824649123 与 sjdfhioxhgdksdjfh</h2>
 <h2>枚举类型是否应该确定到具体类型，else之后是有很多类型的 sdhfhxfdj2384675239hxdfg</h2>
-<h2>横剖面与纵剖面图纸间距的问题 目前求的都是管线在xy平面投影的长度，管线与管线交点之间的距离是否需要改成带z的距离</h2>
 <h2>水平净距中求两个几何对象的最小距离,求得是几何对象在xy平面投影的最小距离，理论上是不正确的</h2>
 double shortestDistance = (pPolyLine1 as IProximityOperator).ReturnDistance(pPolyLine2 as IGeometry);<br>
 
@@ -84,7 +82,7 @@ tGxAnaInfo.CrsCenH = (tGxAnaInfo.CenH2 - tGxAnaInfo.CenH1) * CrsToP1 / P1ToP2 + 
 tGxAnaInfo.CrsTopH = tGxAnaInfo.CrsCenH + sngDs * 0.5;
 <h3>断点处管底高程=断点中心点高程-半径</h3>
 tGxAnaInfo.CrsBtmH = tGxAnaInfo.CrsCenH - sngDs * 0.5;
-<h3>管线断点处地面高程 根据相似三角形性质计算得出</h3>
+<h3>管线断点处地面高程</h3>
 tGxAnaInfo.CrsSurfH = (tGxAnaInfo.SurfH2 - tGxAnaInfo.SurfH1) * CrsToP1 / P1ToP2 + tGxAnaInfo.SurfH1;
 <h3>管线断点处中心埋深=管线断点处地面高程-管线断点处中心高程</h3>
 tGxAnaInfo.CrsCenDeep = tGxAnaInfo.CrsSurfH - tGxAnaInfo.CrsCenH;
