@@ -19,6 +19,7 @@ tGxAnaInfo.DmType = 1;<br>
 <h2>判断管网是否为排水的方法不一致，并且通过编码常量来定义，不支持后期改动 klnfhfkjebr824649123 与 sjdfhioxhgdksdjfh</h2>
 <h2>枚举类型是否应该确定到具体类型，else之后是有很多类型的 sdhfhxfdj2384675239hxdfg</h2>
 <h2>水平净距中求两个几何对象的最小距离,求得是几何对象在xy平面投影的最小距离，理论上是不正确的</h2>
+Returns the minimum distance between two geometries.<br>
 double shortestDistance = (pPolyLine1 as IProximityOperator).ReturnDistance(pPolyLine2 as IGeometry);<br>
 
 <h1>2.公式 使用线表数据进行计算 管线相关</h1>
