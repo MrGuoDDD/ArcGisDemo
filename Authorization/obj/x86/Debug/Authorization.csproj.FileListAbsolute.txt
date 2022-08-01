@@ -1,0 +1,7 @@
+D:\mywebSite\arcgisdemo\arcgisMapDemo\arcgisMapDemo\Authorization\bin\x86\Debug\Authorization.dll
+D:\mywebSite\arcgisdemo\arcgisMapDemo\arcgisMapDemo\Authorization\bin\x86\Debug\Authorization.pdb
+D:\mywebSite\arcgisdemo\arcgisMapDemo\arcgisMapDemo\Authorization\bin\x86\Debug\ESRI.ArcGIS.System.dll
+D:\mywebSite\arcgisdemo\arcgisMapDemo\arcgisMapDemo\Authorization\bin\x86\Debug\ESRI.ArcGIS.System.xml
+D:\mywebSite\arcgisdemo\arcgisMapDemo\arcgisMapDemo\Authorization\obj\x86\Debug\Authorization.csprojResolveAssemblyReference.cache
+D:\mywebSite\arcgisdemo\arcgisMapDemo\arcgisMapDemo\Authorization\obj\x86\Debug\Authorization.dll
+D:\mywebSite\arcgisdemo\arcgisMapDemo\arcgisMapDemo\Authorization\obj\x86\Debug\Authorization.pdb
